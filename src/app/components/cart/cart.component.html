@@ -1,0 +1,42 @@
+<!--Products To Buy-->
+<h3>Cart</h3>
+
+<ul class="list-group" *ngFor="let item of items">
+  <li class="list-group-item">{{ item.name }} <span id="spnPrice" class="float-end">{{ item.price }} 	&euro;</span></li>
+</ul>
+
+<!--Form-->
+<form class="needs-validation w-100" (submit)="$event.preventDefault()"
+    novalidate [formGroup]="orderForm">
+
+    <div class="form-group d-flex flex-column justify-content-center align-items-center p-2 m-0">
+      <div class="input-group input-group-md">
+        <span class="input-group-text justify-content-end custom-input-label">{{ 'Name' }}</span>
+        <input class="custom-input flex-grow-1 p-2" placeholder="{{ 'your@emailaddress' }}"
+          autocomplete="off" formControlName="name">
+      </div>
+    </div>
+
+    <div class="form-group d-flex flex-column justify-content-center align-items-center p-2 m-0">
+      <div class="input-group input-group-md">
+        <span class="input-group-text justify-content-end custom-input-label">{{ 'Address' }}</span>
+        <input class="custom-input flex-grow-1 p-2" placeholder="{{ 'your@emailaddress' }}"
+          autocomplete="off" formControlName="address">
+      </div>
+    </div>
+
+    <div class="form-group d-flex justify-content-center align-items-center p-1 m-0">
+      <button type="button"
+        class="btn btn-primary flex-grow-1" (click)="makeOrder(); clearCart()"
+          [disabled]="!orderForm.valid">{{ 'Ordina'}}</button>
+    </div>
+
+  </form>
+
+  <h3 *ngIf="isOrderCompleted">Grazie! Acquisto completato, le faremo sapere via email lo stato della spedizione.</h3>
+
+  <div *ngIf="items.length === 0" class="alert alert-danger" role="alert">
+   Attenzione! Carrello Vuoto.
+  </div>
+
+

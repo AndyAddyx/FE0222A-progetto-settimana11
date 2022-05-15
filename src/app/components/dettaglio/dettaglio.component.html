@@ -1,0 +1,12 @@
+<h1>Product Detail</h1>
+<ng-container *ngIf="prodDett">
+  <div class="container mt-5 m-auto">
+    <h2>{{prodDett?.name}}</h2>
+    <img src="{{prodDett.path}}" class="card-img-top" alt="Foto">
+    <h3>{{prodDett?.price}} &euro;</h3>
+    <p>{{prodDett?.description}}</p>
+    <button (click)="addToCart(prodDett)">Acquista</button>
+  </div>
+
+</ng-container>
+

@@ -1,0 +1,15 @@
+<div class="container m-5"></div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let prod of prodArray; let index = index">
+    <div class="card h-100">
+      <img src="{{prod.path}}" class="card-img-top" alt="Foto">
+      <div class="card-body">
+        <h5 class="card-title">{{prod.name}}</h5>
+        <p class="card-text">{{prod.description}}</p>
+      </div>
+      <div class="card-footer">
+       <button [routerLink]="['/detail',prod.id]">Dettagli</button>
+      </div>
+    </div>
+  </div>
+</div>

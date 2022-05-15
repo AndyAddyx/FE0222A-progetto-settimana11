@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Tama Snare Lsg1465-sng",
+      "price": 420,
+      "path": "assets/img/Tamasnare.jpeg",
+      "description": "Fusto in albero della gomma (spessore 6mm, 9 strati), blocchetti Tube Lug MTL60 in ottone Cerchi Steel Mighty 2,3mm (10 tiranti), in dotazione pelle battente EVANS® G1 sabbiata"
+    },
+    {
+      "id": 2,
+      "name": "Fender Stratocaster",
+      "price": 699,
+      "path": "assets/img/Fenderstratocaster.webp",
+      "description": "Il suono ispiratore di una Stratocaster è uno dei fondamenti Fender. Caratterizzata da un suono classico, high-end squillanti, medi potenti ed una fascia bassa robusta, abbinato ad una articolazione cristallina, la Player Stratocaster è dotata dello stile e del feel Fender autentici."
+    },
+    {
+      "id": 3,
+      "name": "IBANEZ GSR200 Black",
+      "price": 239,
+      "path": "assets/img/Ibanezbass.webp",
+      "description": "Per 25 anni i bassi SR hanno dato ai bassisti una moderna alternativa. Con la sua persistente popolarità, Ibanez è costantemente alla ricerca di rispondere alle esigenze di una gamma di musicisti più ampia, con diversi budget. L'SR continua ad emozionare con il suo manico veloce, il body leggero ed un elettronica perfettamente abbinata."
+    },
+    {
+      "id": 4,
+      "name": "FENDER FA125 Dreadnought Sunburst ",
+      "price": 125,
+      "path": "assets/img/Fenderacustica.webp",
+      "description": "La FA-125 è una chitarra sbalorditiva con un prezzo accessibile. La costruzione in laminato di qualità con una moderna paletta Fender 3+3 ed il ponte Viking creano uno strumento facile da suonare e che suona alla grande."
+    },
+    {
+      "id": 5,
+      "name": "NATAL DNA F22 Drum Kit",
+      "price": 499,
+      "path": "assets/img/Nataldrums.webp",
+      "description": "Trova il tuo ritmo con la serie DNA di Natal, il modo perfetto per iniziare il tuo viaggio con la batteria. Questi fusti in tiglio a 6 strati sono molto resistenti e offrono un suono caldo e corposo, ottimo sia per lo studio che per le esibizioni dal vivo. "
+    },
+    {
+      "id": 6,
+      "name": "KURZWEIL KA130",
+      "price": 749,
+      "path": "assets/img/pianoforte.webp",
+      "description": "E' dotata di una tastiera pesata Hammer Action con sensibilità al tocco regolabile. Puoi goderti di una vasta gamma di selezioni audio acustiche ed elettroniche, con pianoforti, pianoforti elettrici, organi, archi e strumenti per cori."
+    }
+  ],
+  "prices": [
+    {
+      "type": "1-Giorno",
+      "price": 25.99
+    },
+    {
+      "type": "2-Giorni",
+      "price": 9.99
+    },
+    {
+      "type": "5-Giorni",
+      "price": 2.99
+    }
+  ]
+}
